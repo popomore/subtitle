@@ -13,7 +13,10 @@
     "blanket": "~1.1.4"
   },
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "blanket": {
+      "pattern": "//^((?!(node_modules|test)).)*$/"
+    }
   },
   "main": "./index.js",
   "bin": {
